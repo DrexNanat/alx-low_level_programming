@@ -4,7 +4,7 @@
  * main - main block
  * Description: Use `putchar` function to print alphabets.
  * Return: 0
- * /
+ */
 int main(void)
 {
 	char c = 'a';
