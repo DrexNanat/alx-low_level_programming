@@ -7,13 +7,14 @@
  */
 int _islower(int c)
 {
-	if (c >= 97 && c <= 122)
+	int i = 'a';
+
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		return (1);
+		if (c == i)
+		{
+			return (1);
+		}
 	}
-	else
-	{
-		return (0);
-	}
-	_putchar('\n');
+	return (0);
 }
