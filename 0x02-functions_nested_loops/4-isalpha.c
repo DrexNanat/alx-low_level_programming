@@ -1,4 +1,5 @@
 #include "main.h"
+#include <ctype.h>
 
 /**
  * _isalpha - Shows 1 if the input is a letter
@@ -6,17 +7,19 @@
  *
  * @c: The character in ASCII code
  *
- * Return 1 for letters. 0 for the rest.
+ * Return: return 0 on success and 1 on fail
  */
+
 int _isalpha(int c)
 {
-	if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
+	int i = isalpha(c);
+
+	if (i > 0)
 	{
-		retrn (1);
+		return (1);
 	}
 	else
 	{
 		return (0);
 	}
-	_putchar('\n');
 }
