@@ -5,11 +5,12 @@
  * @c: character to check
  * Return: gives 1 or 0
  */
-int _supper(int c)
+int main(void)
 {
-	if (c >= 'A' && c <= 'Z')
-	{
-		return (1);
-	}
+	int i;
+
+	i = 98 % 2;
+	positive_or_negative(i);
+
 	return (0);
 }
