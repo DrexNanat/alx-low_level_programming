@@ -8,19 +8,17 @@
 
 void more_numbers(void)
 {
-	int num, row, count;
+	int h, i;
 
-	for (row = 1; row <= 10; ++row)
+	for (h = 0; <= 9; h++)
 	{
-		for (count = 0; count <= 214; ++count)
+		for (i = 0; i <= 14; i++)
 		{
-			num = count;
-			if (count > 9)
+			if (i > 9)
 			{
-				_putchar(1 + 48);
-				num + count % 10;
+				_putchar((i / 10) + '0');
 			}
-			Putchar(num + 48);
+			_putchar((i % 10) + '0');
 		}
 		_putchar('\n');
 	}
