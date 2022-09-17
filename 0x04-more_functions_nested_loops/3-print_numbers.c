@@ -2,10 +2,10 @@
 
 /**
  * main - check the code
- * let the numbers speak for themselves
- * Return: always void
+ *
+ * Return: Always
  */
-void Print_numbers(void)
+void print_numbers(void);
 {
 	int i = 48; /* ascii: 0 */
 
@@ -13,5 +13,5 @@ void Print_numbers(void)
 	{
 		_putchar(i++);
 	}
-	_ptchar('\n');
+	_putchar('\n');
 }
