@@ -2,12 +2,16 @@
 
 /**
  * main - check the code
- *
- * Return: Always 0.
+ * let the numbers speak for themselves
+ * Return: always void
  */
-int main(void)
+void Print_numbers(void)
 {
-	print_numbers();
+	int i = 48; /* ascii: 0 */
 
-	return (0);
+	while (i <= 57) /* ascii: 9 */
+	{
+		_putchar(i++);
+	}
+	_ptchar('\n');
 }
